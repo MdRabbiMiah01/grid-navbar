@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 3fr 0.4fr;
+    height: 100vh;
+    gap: 20px;
+    grid-template-areas: "nav nav nav nav nav" "ads-1 article article article ads-2" "footer footer footer footer footer";
+}
+div, article, footer{
+    background-color: gold;
+    text-align: center;
+}
+.ads-1{
+    grid-area: ads-1;
+}
+.ads-2{
+    grid-area: ads-2;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
+#logo{
+    width: auto;
+    height:100px;
+    margin: 0px 30px;
+    padding: 10px;
+}
+nav{
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 20px;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
